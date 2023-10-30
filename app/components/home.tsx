@@ -2,6 +2,8 @@
 
 require("../polyfill");
 
+import { Analytics } from "@vercel/analytics/react";
+
 import { useState, useEffect } from "react";
 
 import styles from "./home.module.scss";
@@ -128,7 +130,8 @@ function Screen() {
   const isHome = location.pathname === Path.Home;
   const isAuth = location.pathname === Path.Auth;
   const isMobileScreen = useMobileScreen();
-  const shouldTightBorder = getClientConfig()?.isApp || (config.tightBorder && !isMobileScreen);
+  const shouldTightBorder =
+    getClientConfig()?.isApp || (config.tightBorder && !isMobileScreen);
 
   useEffect(() => {
     loadAsyncGoogleFont();
@@ -143,6 +146,7 @@ function Screen() {
         }`
       }
     >
+      <Analytics />
       {isAuth ? (
         <>
           <AuthPage />
