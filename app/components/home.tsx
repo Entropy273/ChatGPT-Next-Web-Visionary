@@ -2,8 +2,6 @@
 
 require("../polyfill");
 
-import { Analytics } from "@vercel/analytics/react";
-
 import { useState, useEffect } from "react";
 
 import styles from "./home.module.scss";
@@ -146,7 +144,6 @@ function Screen() {
         }`
       }
     >
-      <Analytics />
       {isAuth ? (
         <>
           <AuthPage />
