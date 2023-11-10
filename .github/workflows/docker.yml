@@ -45,6 +45,8 @@ jobs:
               docker run -d --name chatgpt-next-web-visionary \
                             --restart unless-stopped \
                             -p 16941:3000 \
-                            -e OPENAI_API_KEY=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 \
-                            -e CODE=longyeai2023 \
+                            -e OPENAI_API_KEY=${{ secrets.OPENAI_API_KEY }} \
+                            -e OPENAI_ORG_ID=${{ secrets.OPENAI_ORG_ID }}
+                            -e CODE=${{ ${{ secrets.ACCESS_CODE }} }} \
+                            -e HIDE_USER_API_KEY=1 \
                             dominix694/chatgpt-next-web-visionary:latest
