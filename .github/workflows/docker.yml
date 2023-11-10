@@ -42,4 +42,4 @@ jobs:
               docker pull dominix694/chatgpt-next-web-visionary:latest
               docker stop chatgpt-next-web-visionary || true
               docker rm chatgpt-next-web-visionary || true
-              docker run -d --name chatgpt-next-web-visionary --restart unless-stopped -p 16941:16941 dominix694/chatgpt-next-web-visionary:latest
+              docker run -d --name chatgpt-next-web-visionary --restart unless-stopped -p 16941:3000 dominix694/chatgpt-next-web-visionary:latest
