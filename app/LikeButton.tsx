@@ -31,7 +31,7 @@ const LikeButton: React.FC = () => {
             <div className="modal-text">
               <p>
                 这里是由ing搭建的、基于
-                <a href="https://github.com/Yidadaa/ChatGPT-Next-Web">
+                <a href="https://github.com/ChatGPTNextWeb/ChatGPT-Next-Web">
                   ChatGPT-Next-Web
                 </a>
                 的GPT镜像站，可直接使用GPT-3.5、GPT-4等。
@@ -51,7 +51,7 @@ const LikeButton: React.FC = () => {
                 api的价格，约在1元/15000汉字，即平均每对话15000个汉字（包含问题和回答），消耗人民币1元。对于轻度使用来说，成本可忽略不计。所以请放心使用。
               </p>
               <p>
-                （请务必点击输入框上方的最后一个按钮，修改使用的模型！默认模型为gpt-3.5-turbo，建议使用gpt-4-32k或gpt-4-1106-Preview）
+                （请务必点击输入框上方的最后一个按钮，修改使用的模型！默认模型为gpt-3.5-turbo，建议使用gpt-4-0125-Preview）
               </p>
               <p>当然，如果你想支持本站的持续运营，亦是非常欢迎：</p>
             </div>
